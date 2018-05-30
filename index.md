@@ -2,4 +2,6 @@
 layout: presentation
 ---
 
-[![](assets/img/arduino-logo.png)](project)
+# [](#header-1)Machine Communication
+
+[![](assets/img/machine-communication.png)](project)

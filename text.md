@@ -6,11 +6,11 @@ layout: default
 
 [Project](project)
 
-Imagine your job is to build tools and instruments for researchers who study
-animal brains.
+In our group, we build tools and instruments for researchers who study animal
+brains.
 
-A researcher emails you and tells you she wants to train mice to reach for a
-food pellet after they hear a sound.
+Imagine that a researcher emails you and tells you she wants to train mice to
+reach for a food pellet after they hear a sound.
 
 The researcher studies the activity in the mouse brain as the mouse is reaching.
 Perhaps she wants to increase the number of reaches, so she can collect more
@@ -18,6 +18,8 @@ data in a given amount of time, by training the to mouse to perform on cue.
 
 This is a very vague project description so far, but often it is useful to
 figure out the fundamental problem of a project before diving into the details.
+
+[Communication](communication)
 
 At heart of this project is a communication problem.
 
