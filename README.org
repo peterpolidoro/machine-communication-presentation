@@ -6,7 +6,7 @@
   - Author :: Peter Polidoro
   - License :: BSD
 
-  [[https://peterpolidoro.github.io/arduino-tutorial/]]
+  [[https://peterpolidoro.github.io/machine-communication/]]
 
 * Presentation
 
