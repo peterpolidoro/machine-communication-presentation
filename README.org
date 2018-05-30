@@ -1,0 +1,15 @@
+#+TITLE: machine-communication
+#+AUTHOR: Peter Polidoro
+#+EMAIL: peterpolidoro@gmail.com
+
+* Repository Information
+  - Author :: Peter Polidoro
+  - License :: BSD
+
+  [[https://peterpolidoro.github.io/arduino-tutorial/]]
+
+* Presentation
+
+  [[https://peterpolidoro.github.io/machine-communication/)][Slides]]
+
+  [[https://peterpolidoro.github.io/machine-communication/text][Text]]
