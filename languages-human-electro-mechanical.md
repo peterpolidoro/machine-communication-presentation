@@ -18,4 +18,4 @@ Mass is distributed geometrically in 3D space and time with forces acting on it.
 
 Electronic component values and electric signals.
 
-[![](assets/img/knobs-signals.png)](pcb)
+[![](assets/img/kinetic-signals.png)](pcb)
