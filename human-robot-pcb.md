@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/human-robot-pcb.png)](processor)
+[![](assets/img/human-robot-pcb.png)](signal-noise)
