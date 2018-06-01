@@ -14,6 +14,6 @@ layout: presentation
 
 Information is stored kinetically.
 
-Mass is distributed geometrically in 3D space and time.
+Mass is distributed geometrically in 3D space and time with forces acting on it.
 
 [![](assets/img/kinetic.png)](language-knob)

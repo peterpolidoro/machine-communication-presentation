@@ -14,7 +14,7 @@ layout: presentation
 
 Information is stored kinetically and electronically.
 
-Mass is distributed geometrically in 3D space and time.
+Mass is distributed geometrically in 3D space and time with forces acting on it.
 
 Electronic component values and electric signals.
 
