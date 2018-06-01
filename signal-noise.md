@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/signal-noise.png)](processor)
+[![](assets/img/signal-noise.png)](copy-degradation)
