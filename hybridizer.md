@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/hybridizer.png)](copy-degradation)
+[![](assets/img/hybridizer.png)](zero-one)
