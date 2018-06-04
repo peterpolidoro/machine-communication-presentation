@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/schmitt.png)](schmitt)
+[![](assets/img/schmitt.png)](postel)
