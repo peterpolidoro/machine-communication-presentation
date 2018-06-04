@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/signal-noise.png)](copy-degradation)
+[![](assets/img/signal-noise.png)](light-sensor)

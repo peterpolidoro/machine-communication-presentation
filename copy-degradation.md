@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/copy-degradation.png)](processor)
+[![](assets/img/copy-degradation.png)](threshold)
