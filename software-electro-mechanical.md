@@ -4,4 +4,4 @@ layout: presentation
 
 # [](#header-1) Software-Electro-Mechanical Transmitter
 
-[![](assets/img/software-electro-mechanical.png)](arduino-speaker-transmitter)
+[![](assets/img/software-electro-mechanical.png)](teensy-speaker-transmitter)
