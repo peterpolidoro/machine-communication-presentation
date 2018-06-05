@@ -12,7 +12,7 @@ layout: presentation
 
 # [](#header-2) Processor
 
-Information is stored digitally.
+Information is stored and transmitted digitally.
 
 Machine code instruction set.
 

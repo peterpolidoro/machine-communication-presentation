@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/digit.png)](digit)
+[![](assets/img/digit.png)](processor)

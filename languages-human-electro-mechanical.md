@@ -12,7 +12,7 @@ layout: presentation
 
 # [](#header-2) Electro-Mechanical
 
-Information is stored kinetically and electronically.
+Information is stored and transmitted kinetically and electronically.
 
 Mass is distributed geometrically in 3D space and time with forces acting on it.
 

@@ -12,7 +12,7 @@ layout: presentation
 
 # [](#header-2) Mechanical
 
-Information is stored kinetically.
+Information is stored and transmitted kinetically.
 
 Mass is distributed geometrically in 3D space and time with forces acting on it.
 
