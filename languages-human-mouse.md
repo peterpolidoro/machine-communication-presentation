@@ -10,10 +10,6 @@ layout: presentation
 
 # [](#header-2) Mouse
 
-* Perhaps:
-
 > Ultrasonic "squeek, squeek, squeek"
 
-* Or possibly:
-
-[![](assets/img/does-not-exist.png)](language-droid)
+[![](assets/img/languages-human-mouse.png)](language-droid)

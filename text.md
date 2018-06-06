@@ -2,26 +2,29 @@
 layout: default
 ---
 
-[Start](index)
+[Machine Communication](index)
 
 [Project](project)
-
-In our group, we build tools and instruments for researchers who study animal
-brains.
 
 Imagine that a researcher emails you and tells you she wants to train mice to
 reach for a food pellet after they hear a sound.
 
-The researcher studies the activity in the mouse brain as the mouse is reaching.
+You do not know much about the researcher or her lab, but you know she studies
+some sort of neural activity in the mouse brain as the mouse is reaching.
 Perhaps she wants to increase the number of reaches, so she can collect more
 data in a given amount of time, by training the to mouse to perform on cue.
 
-This is a very vague project description so far, but often it is useful to
-figure out the fundamental problem of a project before diving into the details.
+This is a very vague project description so far. When I first hear about a
+project I am tempted to focus on the details and start brainstorming. Play a
+sound, how many different ways can I think of to play a sound?
 
-[Communication](communication)
+Often, though, it is useful to figure out the fundamental problem of a project,
+what the researcher is really asking you, before diving into the details of what
+they request.
 
-At heart of this project is a communication problem.
+[Communication Diagram](communication)
+
+I think that at the heart of this project is a communication problem.
 
 This figure is from Claude Shannon's wonderful paper on the mathematical theory
 of communciation.
@@ -31,12 +34,12 @@ source produces a message. The transmitter operations on that message to create
 a signal sent over a channel to the receiver. The receiver converts the signal
 back into a message and delivers it to the destination.
 
-[Brains](brains)
+[Human Brain to Mouse Brain Communication](brains)
 
 The researcher wants to send a message from her brain into the brain of the
 mouse, asking it to please reach out and grab a food pellet.
 
-[Ear](ear)
+[Ear Receiver](ear)
 
 The researcher asked you to use the mouse ear to receive messages and deliver
 them to the mouse brain.
@@ -55,8 +58,12 @@ another receiver in the future if necessary.
 
 Perhaps the most obvious way to transmit a signal from a human brain into a
 mouse ear is by using your mouth. Humans often transmit signals from their
-mouths to other human ears when they want to communicate information. Mice
-probably send each other information using their mouths and ears as well.
+mouths to other human ears when they want to communicate information.
+
+Messages are going from my brain through my mouth into your ears and to your
+brains right now.
+
+Mice probably send each other information using their mouths and ears as well.
 
 [Human and Mouse Languages](languages-human-mouse)
 
@@ -118,6 +125,9 @@ independently let Rosie send messages to the mouse automatically as well.
 So the researcher wants you to go back to the drawing board and think of another
 way to transmit sounds to the mouse.
 
+The transmitter most certainly will not look like R2D2, but for now let us use
+that as a place holder representation of whatever transmitter we end up using.
+
 [Sound is Mechanical](sound)
 
 Sound is a mechanical process of air vibrations acting on the mouse ear drum.
@@ -151,6 +161,12 @@ The researcher writes back that a bell might work, but in addition to being able
 to send signals using the bell, she also wants to be able to send messages to
 the bell in order to changes its properties.
 
+Perhaps she wants to be able to ring the bell at one frequency to tell the mouse
+that there is a food pellet ready and then ring it at another frequency after
+the mouse has successfully performed the reach or ring it at yet another
+frequency if the reach was unsuccessful. That will help her when training the
+mouse in some way.
+
 [Human and Mechanical Languages](languages-human-mechanical)
 
 How is it possible to send messages to something mechanical?
@@ -176,6 +192,21 @@ the knobs allows the human to read and adjust the value in something like
 English, while the position of the knobs communicate those values to the
 mechanical device.
 
+One of the nice things about using an intermediate language is that it hides the
+implementation details. That can free you up to change the implementation
+details later if necessary, but not have to change the language that you are
+speaking.
+
+For example, say you are using an inexpensive electric stove at home to cook
+food and you decide you want to upgrade to a fancy gas stove. The performance
+and cost and other details may change, but the "Simmer, Low, Medium, High" knob
+language will pretty much stay the same and recipes from cookbooks will work
+with either stove, perhaps with some slight adjustments for different stove
+performance. If the cookbook said send four amps through the cooking coil for 10
+minutes, then you would need to translate the cookbook for specific stoves.
+
+The details have been abstracted away by the intermediate language.
+
 [Human Knob Bell](human-knob-bell)
 
 So now we have a potential way for the human to transmit information to the
@@ -191,7 +222,38 @@ to be able to send messages to the bell automatically.
 
 Since Rosie is most likely not anything resembling humanoid, without eyes to see
 the labels or hands to turn the knobs, it would probably be very difficult for
-Rosie to use the knob language to change the bell properties.
+Rosie to use the knob language to change the bell properties. Rosie might be
+able to instead use the bell's mechanical language directly, but that might also
+be difficult.
+
+[Fly Alcohol Assay](fly-alcohol-assay)
+
+This is a fly alcohol project that some of us here worked on years ago for
+Ulrike's lab. There are six tunnels and one fly is placed into each tunnel. A
+camera looked down at the tunnels and figured out in real time the location and
+orientation of all of the flies. Three little gates in each tunnel could open
+and let the fly run freely or close and trap a fly in a section of a tunnel. We
+could then pump in odors or alcohol vapors.
+
+Right after we got it to work, the researchers moved to Brown where they ran it
+for a few years. I am not sure the researchers ever found anything of note
+scientifically using this rig, so in that sense perhaps it was not a successful
+project, but it was a pretty clever little device.
+
+We made a mistake on this rig, though, that made it difficult to use. There was
+an overly complicated mechanical linkage that controlled each gate. It worked
+well if everything was adjusted properly, but if it was a little too tight, the
+gates would jam, if it was a little too loose, the gates would fall down when
+they were supposed to be closed. Every researcher using this rig had to be
+trained how to adjust the linkage properly and do that before every experiment.
+This was very frustrating for new researchers and it made them not like using
+the rig.
+
+This was something we could have pretty easily fixed with a simpler linkage in
+another design iteration. We wanted to send two messages to the gates, open or
+close and the linkage should have been correspondingly as simple. That is
+something you have to be careful about when using a purely mechanical
+communication scheme.
 
 [Yet Another Transmitter](human-robot-transmitter)
 
@@ -245,11 +307,52 @@ transmitter, she could flip switches or turn knobs to change the frequency or
 duration of the tone.
 
 When Rosie wants to send messages to the electro-mechanical transmitter, she
-could change the value of analog voltage signal or the pulse width of a square
-wave perhaps.
+could change the value of analog voltage signal. Increasing the voltage might
+increase the tone frequency.
 
-So now we have thought of another potential solution for the researcher, but can
-we do better?
+Lots of rigs and devices in this building use variations of this analog voltage
+language. Sometimes it is unavoidable like when a sensor only outputs an analog
+voltage or some device only accepts analog input. Some people love using analog
+voltages because you can look at them on an oscilloscope and vary them by
+turning knobs.
+
+Using analog voltages to send messages, however, has a drawback of being
+susceptible to noise.
+
+[Signal Noise](signal-noise)
+
+Every signal contains some amount of noise. There are techniques for minimizing
+noise and maximizing signal, like shielding wires and using differential
+signals, but it is always going to be there to some extent.
+
+[Light Sensor](light-sensor)
+
+Here is another project that I worked on years ago that only used analog
+circuitry. It is a light sensor for detecting IR light reflecting off of fly
+wings. Researchers use it to tell how fast a fly is flying and as a way to
+detect when flying starts and stops.
+
+After a couple of iterations I got it to work well and it was used by Sung Soo
+in a rig here and by other labs in several universities.
+
+The first iteration of my design, though, I did something pretty stupid in
+retrospect. I needed a nice bandpass filter to remove noise and the large DC
+component of the signal. Ideal bandpass filters have nice sharp edges where
+everything outside the frequency range is squashed to zero and everything inside
+the range passes unchanged. Real filters are never so nice, but by adding orders
+to the filter in stages you can better approximate an ideal filter. Filters
+might reduce the signal, but by adding a gain stage afterwards you can increase
+the signal back up to where you want it.
+
+I wanted a really nice filter so I used four filter stages with an amplifier at
+the end. This worked great when I simulated the filter, but in reality, each
+stage reduced the signal more and more until it was the same magnitude as the
+noise and when I amplified it at the end the noise was amplified too and the
+resulting waveform looked horrible.
+
+I fixed the filter by putting smaller amplifiers after each stage instead of one
+big one at the end. Noise is always something you have to deal with properly in
+analog circuits to get good results.
 
 [Processor](processor)
 
