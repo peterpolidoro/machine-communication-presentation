@@ -255,6 +255,12 @@ close and the linkage should have been correspondingly as simple. That is
 something you have to be careful about when using a purely mechanical
 communication scheme.
 
+Sometimes you have no choice but to require your mechanical parts to have very
+high precision with reliable techniques for aligning them and calibrating them.
+Optical components in a microscope are an example. Ideally, though, you can make
+your design tolerant to imperfections and misalignment and that sort of design
+talent can take years of experience to achieve.
+
 [Yet Another Transmitter](human-robot-transmitter)
 
 So the researcher wants you to go back to the drawing board and think of yet
@@ -353,6 +359,8 @@ resulting waveform looked horrible.
 I fixed the filter by putting smaller amplifiers after each stage instead of one
 big one at the end. Noise is always something you have to deal with properly in
 analog circuits to get good results.
+
+[Copy Degradation](copy-degradation)
 
 [Processor](processor)
 
