@@ -2,19 +2,25 @@
 layout: presentation
 ---
 
-```json
---> {"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 3}
-<-- {"jsonrpc": "2.0", "result": 19, "id": 3}
-```
+# [](#header-1) JSON-RPC 2.0
 
 ```json
---> ["subtract",42,23]
-<-- {"id": "subtract", "result": 19}
+--> {"jsonrpc": "2.0", "method": "add", "params": [42, 23], "id": 3}
+<-- {"jsonrpc": "2.0", "result": 65, "id": 3}
 ```
+
+# [](#header-1) Compact JSON-RPC 2.0
 
 ```json
---> subtract 42 23
-<-- {"id": "subtract", "result": 19}
+--> ["add",42,23]
+<-- {"id": "add", "result": 65}
 ```
 
-[![](assets/img/transparent.png)](json-rpc)
+# [](#header-1) Super Compact JSON-RPC 2.0
+
+```
+--> add 42 23
+<-- {"id": "subtract", "result": 65}
+```
+
+[![](assets/img/white.png)](audio-controller)

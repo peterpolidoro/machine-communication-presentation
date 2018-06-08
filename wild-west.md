@@ -20,8 +20,8 @@ Byte N+8 - Checksum over Topic ID and Message Data
 ```
 
 ```json
---> {"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 3}
-<-- {"jsonrpc": "2.0", "result": 19, "id": 3}
+--> {"jsonrpc": "2.0", "method": "add", "params": [42, 23], "id": 3}
+<-- {"jsonrpc": "2.0", "result": 65, "id": 3}
 ```
 
 [![](assets/img/wild-west.png)](json-rpc)
