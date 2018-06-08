@@ -3,8 +3,8 @@ layout: presentation
 ---
 
 ```
-PT 5000,50\n
-ST\n
+PT 5000,50
+ST
 ```
 
 ```
@@ -24,4 +24,4 @@ Byte N+8 - Checksum over Topic ID and Message Data
 <-- {"jsonrpc": "2.0", "result": 19, "id": 3}
 ```
 
-[![](assets/img/wild-west.png)](software-electro-mechanical)
+[![](assets/img/wild-west.png)](json-rpc)
