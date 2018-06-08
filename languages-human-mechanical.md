@@ -8,7 +8,7 @@ layout: presentation
 
 > "Change tone frequency to 5000 Hz please."
 >
-> "Change tone duration to 75 ms please."
+> "Change tone volume to 50 % please."
 
 # [](#header-2) Mechanical
 
