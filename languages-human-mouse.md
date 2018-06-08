@@ -10,6 +10,6 @@ layout: presentation
 
 # [](#header-2) Mouse
 
-> Ultrasonic "squeek, squeek, squeek"
+> Ultrasonic "squeek, squeek, squeek" or perhaps does not exist.
 
 [![](assets/img/languages-human-mouse.png)](language-droid)
