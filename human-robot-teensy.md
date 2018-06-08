@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/human-robot-teensy.png)](code0)
+[![](assets/img/human-robot-teensy.png)](osi)
