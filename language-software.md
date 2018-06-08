@@ -15,7 +15,7 @@ askMouseToReachForPellet()
 
 setToneFrequency(5000)
 
-setToneDuration(75)
+setToneVolume(50)
 ```
 
 [![](assets/img/language-software.png)](software-electro-mechanical)
