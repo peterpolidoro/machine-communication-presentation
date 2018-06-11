@@ -34,7 +34,10 @@ layout: presentation
       "properties": [
         "triggerToneFrequency",
         "triggerToneVolume",
-        "triggerToneDuration
+        "triggerToneDuration"
+      ]
+      "callbacks": [
+        "triggerTone",
       ]
     }
   }

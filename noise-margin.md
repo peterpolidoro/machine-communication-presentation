@@ -2,4 +2,4 @@
 layout: presentation
 ---
 
-[![](assets/img/noise-margin.png)](digital-analog)
+[![](assets/img/noise-margin.png)](r2d2-c2po)
