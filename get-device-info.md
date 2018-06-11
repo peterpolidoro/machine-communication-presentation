@@ -52,4 +52,4 @@ getDeviceInfo
 }
 ```
 
-[![](assets/img/white.png)](get-device-info)
+[![](assets/img/white.png)](future)
