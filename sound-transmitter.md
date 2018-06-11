@@ -2,22 +2,22 @@
 layout: presentation
 ---
 
-# [](#header-1) JSON-RPC 2.0
+```json
+?
+```
 
 ```json
---> ?
-<--
 {
   "id": "?",
   "result": {
     "device_id": {
-      "name": "audio_controller",
+      "name": "sound_transmitter",
       "form_factor": "3x2",
       "serial_number": 0
     },
     "api": {
       "firmware": [
-        "AudioController"
+        "SoundTransmitter"
       ],
       "verbosity": "NAMES",
       "functions": [
@@ -28,20 +28,19 @@ layout: presentation
       ],
       "parameters": [
         "frequency",
-        "speaker",
         "volume"
       ],
       "properties": [
         "triggerToneFrequency",
         "triggerToneVolume",
         "triggerToneDuration"
-      ]
+      ],
       "callbacks": [
-        "triggerTone",
+        "triggerTone"
       ]
     }
   }
 }
 ```
 
-[![](assets/img/white.png)](audio-controller)
+[![](assets/img/white.png)](play-tone)

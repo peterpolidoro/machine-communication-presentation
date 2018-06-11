@@ -23,4 +23,4 @@ layout: presentation
 <-- {"id": "add", "result": 65}
 ```
 
-[![](assets/img/white.png)](audio-controller)
+[![](assets/img/white.png)](sound-transmitter)
