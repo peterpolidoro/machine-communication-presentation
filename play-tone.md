@@ -36,4 +36,8 @@ playTone ??
 playTone 5000 50
 ```
 
+```json
+stop
+```
+
 [![](assets/img/white.png)](trigger-tone)

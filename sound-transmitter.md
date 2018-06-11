@@ -12,7 +12,6 @@ layout: presentation
   "result": {
     "device_id": {
       "name": "sound_transmitter",
-      "form_factor": "3x2",
       "serial_number": 0
     },
     "api": {
