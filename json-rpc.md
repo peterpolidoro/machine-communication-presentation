@@ -20,7 +20,7 @@ layout: presentation
 
 ```
 --> add 42 23
-<-- {"id": "subtract", "result": 65}
+<-- {"id": "add", "result": 65}
 ```
 
 [![](assets/img/white.png)](audio-controller)
