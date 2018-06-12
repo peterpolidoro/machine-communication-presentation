@@ -6,8 +6,9 @@ layout: default
 
 [Project](project)
 
-Imagine that a researcher emails you and tells you she wants to train mice to
-reach for a food pellet after they hear a sound.
+Imagine a researcher emails you and asks if you would like to work on a new
+project. She wants to train a mouse to reach for a food pellet when it hears a
+sound.
 
 You do not know much about the researcher or her lab, but you know she studies
 some sort of neural activity in the mouse brain as the mouse is reaching.
@@ -16,11 +17,14 @@ data in a given amount of time, by training the to mouse to perform on cue.
 
 This is a very vague project description so far. When I first hear about a
 project I am tempted to focus on the details and start brainstorming. Play a
-sound, how many different ways can I think of to play a sound?
+sound, play a sound, how many different ways can I think of to play a sound?
 
-Often, though, it is useful to figure out the fundamental problem of a project,
-what the researcher is really asking you, before diving into the details of what
-they request.
+It is important, though, to first figure out the fundamental problem of a
+project, what the researcher is really asking you, before diving into the
+details of what they request.
+
+Question your assumptions in the very beginning before investing time in any one
+particular solution.
 
 [Communication Diagram](communication)
 
@@ -29,15 +33,14 @@ I think that at the heart of this project is a communication problem.
 This figure is from Claude Shannon's wonderful paper on the mathematical theory
 of communciation.
 
-You want to transmit information from a source to a destination. The information
-source produces a message. The transmitter operations on that message to create
-a signal sent over a channel to the receiver. The receiver converts the signal
-back into a message and delivers it to the destination.
-
 [Human Brain to Mouse Brain Communication](brains)
 
 The researcher wants to send a message from her brain into the brain of the
 mouse, asking it to please reach out and grab a food pellet.
+
+She needs a transmitter to convert her message into a signal, which can then be
+sent through a channel to some receiver. The receiver will convert the signal
+back into a message and deliver it to the mouse brain destination.
 
 [Ear Receiver](ear)
 
@@ -50,14 +53,14 @@ messages to its brain, like flashing lights in its eyes, producing an odor, or
 poking or vibrating it. Or maybe there is a way to deliver messages into its
 brain with some sort of probe, bypassing its senses.
 
-The researcher requested using the ear as the receiver, so for now you assume
-that is important. You make a mental note, though, that perhaps you can try
-another receiver in the future if necessary.
+It seems reasonable to use the mouse ear as a receiver, so go with that for now.
+You make a mental note, though, that perhaps you can try another receiver in the
+future if necessary.
 
 [Mouth](mouth)
 
-Perhaps the most obvious way to transmit a signal from a human brain into a
-mouse ear is by using your mouth. Humans often transmit signals from their
+Perhaps the most obvious way for a human to transmit a signal from her brain
+into a ear is by using her mouth. Humans often transmit signals from their
 mouths to other human ears when they want to communicate information.
 
 Messages are going from my brain through my mouth into your ears and to your
@@ -82,7 +85,8 @@ possibly no such mouse language exists.
 
 An alternative to using either human or mouse languages, would to make up a new
 language and teach that to both the human and the mouse. Some sort of in between
-language that is simplier for both to learn, like beeps or whistling tones.
+language that is simplier for both to learn, like beeps or whistling tones, like
+the droid language of R2D2.
 
 [Whistle Solution](whistle)
 

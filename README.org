@@ -10,6 +10,6 @@
 
 * Presentation
 
-  [[https://peterpolidoro.github.io/machine-communication/)][Slides]]
+  [[https://peterpolidoro.github.io/machine-communication/][Slides]]
 
   [[https://peterpolidoro.github.io/machine-communication/text][Text]]
