@@ -683,3 +683,128 @@ This Teensy board with an attached audio board is a nice choice. The board
 schematics and software are all open source allowing it to be easily modified.
 You do not need to buy any expensive software or hardware licenses making them
 almost disposable they are so cheap. Let us choose this for our sound transmitter.
+
+[Teensy Transmitter](teensy-transmitter)
+
+The researcher and Rosie can both use the electrical trigger language to tell
+the Teensy transmitter to play tones. The researcher could press a button and
+Rosie could toggle the voltage level on an electrical line.
+
+[Communicating to the Teensy](human-robot-teensy)
+
+What language can we use send messages to the Teensy transmitter?
+
+[Open Systems Interconnection](osi)
+
+The Open Systems Interconnection model partitions a communication system into a
+set of abstraction layers. The goal is the interoperability of diverse
+communication systems with standard protocols. The lowest level defines the
+physical medium of communication, whether it is over wires or wireless, RS-232
+or CAN bus or any other possible communication mediums. Abstraction layers are
+added on top of this layer, allowing the same higher level language to be use
+regardless of how the lower layers are implemented. The particular
+implementation may affect the performance or cost or other factors of the
+communication, but any low level may be used as long as they match on both the
+transmitter and receiver. I am interested in what higher level languages, closer
+to the top of the abstraction layers, may be used to communicate between
+devices.
+
+[Wild West](wild-west)
+
+Of course it would nice if everything in the world used the exact same language
+so anything could seemlessly communicate with anything else. When I first
+started building devices, I made up a new little language for each one. It was
+turning into a support nightmare to keep track of them all. Years ago I looked
+around for some sort of common language that I could use to send messages to all
+of my devices. What I found is that there is no standardized format, there are
+hundreds or thousands of different schemes. Many companies come up with their
+own little language and you either need to find the proper driver for your
+interface language of choice or write your own by reading manuals and
+datasheets.
+
+Many devices have schemes similar to a two letter command string. Lots of other
+devices use some sort of binary format where every byte has to match on the
+transmitter and receiver sides. I found one format called JSON-RPC that seemed
+promising. It sends command messages in JSON format for doing remote procedure
+calls on computers across a network.
+
+[JSON-RPC](json-rpc)
+
+The JSON-RPC format specifies that you need to send a JSON object as a request,
+with a set of key value pairs giving details about the method call. There is a
+method field with an optional parameters field. I like this format, it is very
+readable and flexible, while remaining relatively compact, at least compared to
+other formats like XML.
+
+I wanted something even more compact, though, so I made a slight modification
+that allows JSON array requests as well as object requests. The first item in
+the array specifies the method, with zero or more parameters following in order.
+JSON has enough redundancies where even this can be made more compact by leaving
+out the square brackets and commas, leaving a string that looks more like a bash
+command. This makes it very easy for a human to send it messages while still
+being easy for a little microprocessor to parse it properly and quickly.
+
+[Sound Transmitter](sound-transmitter)
+
+On top of this JSON-RPC format I added the concepts of a device that has
+functions with parameters, properties that allow values to be modified and
+stored while the device is running, and callbacks, functions that take no
+parameters that can be attached to physical pin interrupts. Just by sending the
+device a single question mark character, you get back a response describing the
+device and some of what it can do.
+
+I created a sound transmitter that can play tones in a range of frequencies and
+volumes, with a tone playing callback that can be triggered by button presses or
+pin voltage changes. The callback uses property values to determine the
+frequency and volume of the tone it plays.
+
+[Play Tone](play-tone)
+
+You can ask the device to give you more information about the playTone function.
+It reports back that it takes two parameters, first the frequency with a range
+from 0 to 22000 Hz, and the second parameter is the volume, with a range of 0 to
+100 Hz. You can play a tone by sending a string containing the name playTone and
+the two integer values of the frequency and volume.
+
+[Trigger Tone](trigger-tone)
+
+Likewise, you can ask the device to give you information about the triggerTone
+callback. It tells you that it is attached to both a button for humans to press
+and a BNC input for being triggered from other electronic devices. It uses the
+values of three properties, triggerToneFrequency, triggerToneVolume, and
+triggerToneDuration.
+
+[Trigger Tone Frequency](trigger-tone-frequency)
+
+You can get information about properties just like you can about functions and
+callbacks. You can see information like the currently set value, the default
+value, and the value range and units. You can change property values and they
+will remain changed even when the device is powered off and on again.
+
+[Get Device Information](get-device-info)
+
+You can get more information about the device, such as the firmware and
+hardware.
+
+[Future](future)
+
+I am happy with this little language and the features it enables, but in the
+future I may want to make some significant additions or modifications.
+
+I noticed that the commands I am sending the device are almost identical to
+lisp. Lisp is one of the most ancient high level languages. It has this very
+interesting property of homoiconicity. The code is the same form as data and can
+be modified as it is running. Since JSON does not use parentheses and that is
+all lisp uses, it is possible to use both the JSON-RPC format and a lisp format
+simultaneously. This could allow devices to modify each other's code as they are
+running and connected to each other setting up some very powerful and
+interesting ways of interacting.
+
+I also found a project called the hardware operating system where people are
+working on very similar concepts. They pass messages in a binary format, so
+perhaps this scheme could be used simultaneously as well.
+
+[Human Communication](human-human)
+
+The ultimate goal of all of this is for humans to be able to transmit
+information, ideas, discoveries, and creations to each other.
