@@ -1,4 +1,4 @@
-#+TITLE: machine-communication
+#+TITLE: machine-communication-presentation
 #+AUTHOR: Peter Polidoro
 #+EMAIL: peterpolidoro@gmail.com
 
@@ -6,10 +6,10 @@
   - Author :: Peter Polidoro
   - License :: BSD
 
-  [[https://peterpolidoro.github.io/machine-communication/]]
+  [[https://peterpolidoro.github.io/machine-communication-presentation/]]
 
 * Presentation
 
-  [[https://peterpolidoro.github.io/machine-communication/][Slides]]
+  [[https://peterpolidoro.github.io/machine-communication-presentation/][Slides]]
 
-  [[https://peterpolidoro.github.io/machine-communication/text][Text]]
+  [[https://peterpolidoro.github.io/machine-communication-presentation/text][Text]]
